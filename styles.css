@@ -11,38 +11,43 @@
 </head>
 <body data-gr-c-s-loaded="true">
 	<style type="text/css">
-		.profilepic{
-			width:350px; 
-			margin-top: 50px; 
-			margin-bottom: 100px;
-			border-radius:50%;
-			float: left;
-		}
 		.box_image{
 			text-align: center;
 		}
+		.box_image>.profilepic{
+			width: 30%; 
+			margin-top: -7%; 
+			margin-left: -12.5%;
+			border-radius:50%;
+			float: left;
+			padding: 8%; 
+		}
+
 		.box_heading{
-			margin-top: 300px;
-			margin-left: 875px;
-			font-size: 40px;
+			margin-top: 20%;
+			margin-left: 62%;
+			margin-right: 5%;
+			font-size: 200%;
 			color: white;
 			font-variant: small-caps;
 			line-height: 10%
 		}
 		.box_heading>.name{
-			font-size: 70px;
-			margin-left: -60px;
+			font-size: 200%;
+			margin-left: -17%;
 		}
 		.box{
-			margin-top: 10px;
-			margin-left: 200px;
-			margin-right: 250px;
+			margin-top: 100px;
+			margin-left: 10%;
+			margin-right: 10%;
 			text-align: justify;
-			height: 100px;
+			color: white;
+			font-size: 150%;
+			font-family: Helvetica;
 		}
 		.nav-bar{
 			width: 100%;
-			height: 50px;
+			height: 60px;
 			margin: 0;
 			background: none;
 			position: sticky;
@@ -55,14 +60,20 @@
 			text-align: center;
 			color: white;
 			display: inline-block;
-			margin: 0;
 			font-family: Helvetica;
 			text-decoration: none;
+			font-weight: bold;
 		}
 
 		.nav-bar > .element:hover { 
   			text-decoration: underline;
-		}	
+  			color: yellow;
+  			font-size: 20px;
+			transition: width 2s linear 1s
+		}
+		.page_text {
+
+		}
 
 	</style>
   <script type="text/javascript" src="./Give Me a Title!_files/interactions.js"></script>    <!-- Insert JQuery Script -->
