@@ -11,16 +11,70 @@
 </head>
 <body data-gr-c-s-loaded="true">
 	<style type="text/css">
-		.box_image{
+		.about_image{
 			text-align: center;
 		}
-		.box_image>.profilepic{
-			width: 30%; 
-			margin-top: -7%; 
-			margin-left: -12.5%;
+		.about_image>.profilepic{
+			width: 20%; 
+			margin-top: -3%;
 			border-radius:50%;
 			float: left;
-			padding: 8%; 
+			padding-top: 5%;
+			padding-right: 6%; 
+			padding-left: 6%;
+			padding-bottom: 5%;
+		}
+
+		.contact{
+			margin-top: 6.5%;
+			margin-left: 4%;
+			color: gray;
+			font-size: 150%;
+			font-family: Helvetica;
+		}
+
+		.linkedin {
+			font-family: PT Sans; 
+			color: white;
+    		font-weight: bold;
+    		font-size: 400%;
+    		text-decoration: none;
+    		line-height: 0; 
+    		margin-left: 7%;
+    		line-height: 1;
+		}
+
+		.linkedin:hover {
+			color: rgb(6, 147, 212);
+		}
+
+		.facebook{
+    		line-height: 1;
+    		margin-left: 7%;
+    		width: 5%;
+		}
+
+		.facebook:hover {
+			opacity: 50%; 
+		}
+
+
+		.CV {
+			font-family: Helvetica; 
+    		font-weight: bold;
+    		font-size: 150%;
+    		color: white;
+    		text-decoration: underline;
+    		text-decoration-color: rgb(1,20,27);
+    		line-height: 0; 
+    		margin-left: 10%;
+    		line-height: 1;
+		}
+
+		.CV:hover {
+			color: rgb(6, 147, 212);
+			text-decoration: underline;
+    		text-decoration-color: rgb(1,20,27);
 		}
 
 		.box_heading{
@@ -29,6 +83,7 @@
 			margin-right: 5%;
 			font-size: 200%;
 			color: white;
+			font-family: Helvetica;
 			font-variant: small-caps;
 			line-height: 10%
 		}
@@ -36,20 +91,216 @@
 			font-size: 200%;
 			margin-left: -17%;
 		}
-		.box{
-			margin-top: 100px;
-			margin-left: 10%;
-			margin-right: 10%;
+		.aboutbox{
+			margin-top: 5%;
+			margin-right: 5%;
 			text-align: justify;
 			color: white;
 			font-size: 150%;
 			font-family: Helvetica;
 		}
+
+		.educat{ 
+			margin-left: 5%;
+			width: 23%;
+			text-align: center;
+			text-indent: 41.25px;
+			line-height: 0.25;
+			margin-top: 10%;
+			color: white;
+			border-bottom: 5px solid gray;
+			font-size: 225%;
+			padding-right: 5%;
+			font-family: Helvetica;
+			font-variant: small-caps;
+		}
+
+		.eduheader{
+			margin-top: -8%;
+			margin-left: 45%;
+			color: rgb(16, 141, 168);
+			-webkit-text-stroke: 1px gray;
+			font-size: 250%;
+			font-family: Helvetica;
+			font-weight: bold;
+			line-height: 1;
+		}
+
+		.eduheader > .info{
+			margin-right: 12%;
+			font-weight: normal;
+			font-size: 25px;
+			color: white;
+			font-style: italic;
+		}
+
+		.awardscat{ 
+			margin-left: 5%;
+			width: 23%;
+			text-align: center;
+			text-indent: 41.25px;
+			line-height: 0.25;
+			margin-top: 5%;
+			color: white;
+			border-bottom: 5px solid gray;
+			font-size: 150%;
+			padding-right: 5%;
+			font-family: Helvetica;
+			font-variant: small-caps;
+		}
+
+		.awardsheader{
+			margin-top: -5%;
+			margin-left: 45%;
+			font-size: 200%;
+			color: rgb(16, 141, 168);
+			-webkit-text-stroke: 1px gray;
+			font-family: Helvetica;
+			font-weight: bold;
+			line-height: 1;
+		}
+
+		.awardsheader > .info{
+			margin-right: 12%;
+			font-weight: normal;
+			font-size: 20px;
+			color: white;
+			font-style: italic;
+		}
+
+		.skillscat{ 
+			margin-left: 5%;
+			width: 23%;
+			text-align: center;
+			text-indent: 41.25px;
+			line-height: 0.25;
+			margin-top: 10%;
+			color: white;
+			border-bottom: 5px solid gray;
+			font-size: 197%;
+			padding-right: 5%;
+			font-family: Helvetica;
+			font-variant: small-caps;
+		}
+
+		.skillsheader{
+			margin-top: -5%;
+			margin-left: 45%;
+			font-size: 200%;
+			color: rgb(16, 141, 168);
+			-webkit-text-stroke: 1px gray;
+			font-family: Helvetica;
+			font-weight: bold;
+			line-height: 1;
+		}
+
+		.skillsheader > .skillsinfo{
+			margin-right: 12%;
+			font-weight: normal;
+			font-size: 28px;
+			color: white;
+			font-style: italic;
+			padding-bottom: 1%;
+		}
+
+		.expcat{ 
+			margin-left: 5%;
+			width: 30%;
+			text-align: center;
+			text-indent: 41.25px;
+			line-height: 0.25;
+			margin-top: 5%;
+			color: white;
+			border-bottom: 5px solid gray;
+			font-size: 180%;
+			padding-right: 5%;
+			font-family: Helvetica;
+			font-variant: small-caps;
+		}
+
+		.expheader{
+			margin-top: -5%;
+			margin-left: 45%;
+			font-size: 175%;
+			color: rgb(16, 141, 168);
+			-webkit-text-stroke: 1px gray;
+			font-family: Helvetica;
+			font-weight: bold;
+			line-height: 1;
+		}
+
+		.expheader > .expinfo{
+			margin-right: 10%;
+			font-weight: normal;
+			font-size: 18px;
+			color: white;
+			-webkit-text-stroke: 0px gray;
+			font-style: italic;
+		}
+
+		.expinfo > .expli {
+			margin-right: 10%;
+			font-weight: normal;
+			font-size: 20px;
+			font-style: italic;
+			color: inherit !important;
+			text-decoration: none !important;
+		}
+
+		.expli:hover {
+			color: yellow !important;
+		}
+
+		.researchcat1{ 
+			margin-left: 3%;
+			width: 35%;
+			text-align: center;
+			text-indent: 41.25px;
+			line-height: 0.25;
+			margin-top: 5%;
+			color: white;
+			font-size: 155%;
+			padding-right: 5%;
+			font-family: Helvetica;
+			font-variant: small-caps;
+		}
+
+		.researchheader{
+			margin-top: -8%;
+			margin-left: 45%;
+			font-size: 130%;
+			color: rgb(16, 141, 168);
+			-webkit-text-stroke: 1px gray;
+			font-family: Helvetica;
+			font-weight: bold;
+			line-height: 0.5;
+		}
+
+		.researchheader > .researchinfo{
+			margin-right: 10%;
+			font-weight: normal;
+			font-size: 18px;
+			-webkit-text-stroke: 0px white;
+			color: white !important;
+			font-style: italic;
+			line-height: 1;
+			padding-bottom: 10px;
+		}
+
+		.researchinfo > .researchli {
+			margin-right: 10%;
+			font-weight: normal;
+			font-size: 20px;
+			font-style: italic;
+			color: inherit !important;
+			text-decoration: none !important;
+		}
+		
 		.nav-bar{
 			width: 100%;
 			height: 60px;
 			margin: 0;
-			background: none;
+			background: rgb(1,20,27);
 			position: sticky;
 			top: 0; 
 		}
@@ -71,11 +322,33 @@
   			font-size: 20px;
 			transition: width 2s linear 1s
 		}
-		.page_text {
+		
+		.nav-bar2 {
+			width: 100%;
+			height: 60px;
+			margin: 0;
+			background: none;
+			position: sticky;
+			top: 0; 
+		}
+		.nav-bar2 > .element {
+			width: 14%;
+			line-height: 80px;
+			text-align: center;
+			color: white;
+			display: inline-block;
+			font-family: Helvetica;
+			text-decoration: none;
+			font-weight: bold;
+		}
 
+		.nav-bar2 > .element:hover { 
+  			text-decoration: underline;
+  			color: yellow;
+  			font-size: 20px;
+			transition: width 2s linear 1s
 		}
 
 	</style>
   <script type="text/javascript" src="./Give Me a Title!_files/interactions.js"></script>    <!-- Insert JQuery Script -->
-
 </body></html>
