@@ -177,7 +177,7 @@
 			margin-top: 10%;
 			color: white;
 			border-bottom: 5px solid gray;
-			font-size: 197%;
+			font-size: 175%;
 			padding-right: 5%;
 			font-family: Helvetica;
 			font-variant: small-caps;
@@ -197,7 +197,8 @@
 		.skillsheader > .skillsinfo{
 			margin-right: 12%;
 			font-weight: normal;
-			font-size: 28px;
+			font-size: 25px;
+			-webkit-text-stroke: 0px gray;
 			color: white;
 			font-style: italic;
 			padding-bottom: 1%;
